@@ -961,6 +961,7 @@ a:focus {
     }
 }
 
+
 /*******************************/
 /********* Banner CSS **********/
 /*******************************/
@@ -973,7 +974,7 @@ a:focus {
 }
 
 .banner .container {
-    max-width: 750px;
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -1004,18 +1005,60 @@ a:focus {
     color: #ffffff;
 }
 
-.banner .banner-text .btn {
-    margin-top: 15px;
-    color: #bf4013;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
+/* Tech Box Styles */
+.tech-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.banner .banner-text .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+.tech-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.tech-header {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.tech-header i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.tech-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tech-icon {
+    font-size: 2rem;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tech-icon:hover {
+    color: #414141;
+    transform: scale(1.2);
+}
+
+@media (max-width: 991.98px) {
+    .tech-box {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1033,6 +1076,10 @@ a:focus {
     
     .banner .banner-text p {
         font-size: 16px;
+    }
+    
+    .tech-icon {
+        font-size: 1.8rem;
     }
 }
 
@@ -1052,7 +1099,20 @@ a:focus {
     .banner .banner-text p {
         font-size: 14px;
     }
+    
+    .tech-header i {
+        font-size: 2rem;
+    }
+    
+    .tech-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .tech-icon {
+        font-size: 1.5rem;
+    }
 }
+
 
 /*******************************/
 /********* Contact CSS *********/
